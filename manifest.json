@@ -1,0 +1,86 @@
+{
+  "release_status": "prepared_for_manual_publication",
+  "data_revision": "54074453da7b9911be0f48e4c560be547bc84d21",
+  "allowed_response_sources": [
+    "AlgoTune",
+    "Multi-SWE-bench"
+  ],
+  "response_data_included": false,
+  "starting_kit_redistributed": false,
+  "blanket_license_added": false,
+  "submission_archives": {
+    "v12": {
+      "path": "release_staging/v12_beta11_candidate/v12_beta11_candidate.zip",
+      "sha256": "de12d731b6f1c4b9f6c83226998e17fc930ad55e8c16948c753c6ceaa754fe02"
+    },
+    "v33": {
+      "path": "release_staging/v33_conservative_transfer_candidate/v33_conservative_transfer_candidate.zip",
+      "sha256": "21e8b461ec483f6a13365e001cadb7f94557ad7a325b5343c941495279477b41"
+    }
+  },
+  "dataset_table_sha256": {
+    "algotune/benchmarks.parquet": "b037f4938d32844f5df1c3f86cca701e167da568d3605e8e3c4e3c9e2ff0a83b",
+    "algotune/items.parquet": "b089d8f29fef971f02f45885ecb0a23cb9e9e1dcf249099e1b619f3799611a4c",
+    "algotune/responses.parquet": "66454f671fb545f99d012d212dcd82156c2943fced9c5be82318fc674142097f",
+    "algotune/subjects.parquet": "7e8fd95d157c3d49d0ab4956a570a4d6a234c8ec7f49104af472a22d08286cf4",
+    "multi_swebench/benchmarks.parquet": "ad1c8d39f85ff0e1a2fc82c7293a6d4f3751d912e46cbf2c6bbb193b1d9c6416",
+    "multi_swebench/items.parquet": "21cc67f8c5811cfff671ae0dae34056aadd1f876918c64fce4a4a3b3a28c27b0",
+    "multi_swebench/responses.parquet": "3925964852cede82d958b828f7eaa5f3cc2923a7b8f0e63e783b78a44c028f60",
+    "multi_swebench/subjects.parquet": "06eca4d34e9201ff58c62923a7d76dc315cb9748b308aab21e43e111e3faac49"
+  },
+  "protocol": {
+    "budgets": [
+      0,
+      1,
+      3,
+      7,
+      15,
+      31
+    ],
+    "weights": [
+      0.1,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.1
+    ],
+    "seed": 20261015
+  },
+  "files_sha256": {
+    ".gitignore": "d4d656ef0867b08b126ef552b9feaed3b2ae95c7ffe7d893d7cc570cd0b6a9db",
+    "docs/ATTRIBUTION_AND_LICENSES.md": "b89b1e69421dd3c81cd64d61fc903cd05791f119922d3dc89c2eaf9614f1bbea",
+    "docs/VALIDATION.md": "286ce7cc85d8808bbe19ba2aed14d3ce20ab0ed13379883239cc86a297ff833b",
+    "experiments/solve_assess_validation/pair_eval.py": "8d7715ee6caee1e718f79263676ae39d9e1a0e68f4f3ea7bf48dcc26c16e931a",
+    "experiments/v22_binomial_minimax/model_candidate.py": "b3bffd629628986c4769e2f802c35bb85acc6bbf0c5a4eaffa9d7d618d2c51bb",
+    "experiments/v27_official_data/protocol_frozen.md": "85ee272527b747553508f4428ab4cb2f12513ca79925adb96b84eb7045c65dec",
+    "experiments/v27_official_data/real_trial.py": "3a33f59e310930d332e35203f5de88328989f99e1dab8c50509e2bc8f59a0809",
+    "experiments/v27_official_data/real_trial_results.json": "a126ed12582a4e50115cef52904c26003f8d528ed816304e0971a19a02cb6c0a",
+    "experiments/v33_live_transfer/model.py": "440cf9c323c1a0cdaa4fcda1465eafd7eb3c8f04fccdf1cd3665a64748ca57bf",
+    "experiments/v33_live_transfer/tests.py": "9ac785da3ce2355e50508f843e4e2d4425c02a343ed3f3f067ddd59ac2da33e8",
+    "experiments/v36_prediction_semantics/tests.py": "a7efd316a55461f7a1ed067ae6a3c900a0e4ee3f69396ff3703fa3c47516e001",
+    "experiments/v37_task_conditioned/model.py": "e0918295ec95c9dcbd7485fdc2b73dc7f2fa9681fc7f1264978d4e9e4ade889c",
+    "experiments/v37_task_conditioned/protocol_frozen.md": "65f2314f43584ff26ac83b17baa3e0b8f8660238d725fb0fdb2a766de3eba72b",
+    "experiments/v37_task_conditioned/real_results.json": "39c5b8474f48b7366be1365e4f4d24af5f06d1d26a9b6f61a1ff2b967050424f",
+    "experiments/v37_task_conditioned/run_trial.py": "43c19a9047f4fcd0df108d22070bbe8ac1bbd5ccd4007da4200cbb2996896573",
+    "experiments/v38_minimax_real/results.json": "ea6b9a45d59215928660831e679a3f73dd88542f03ff7a7a20668df02380c164",
+    "experiments/v38_minimax_real/run_trial.py": "bc4356b7d9c536d07a918e4a9b09d8ef6c468fa6de1c42f4d97475c2924a5cb2",
+    "experiments/v38_minimax_real/tests.py": "fb8209d63082135d268df4801451fb930b9a3eae9b393818f8250172e6c8a99d",
+    "LICENSE": "53b489492e47d92b094833d52b760c4c88e599d56fcb22eadd79269470066000",
+    "models/v12/model.py": "cffdb3230d1bce6a259207093003778255848338dfd6fdbb1fb9363616495371",
+    "models/v12/README.md": "6469526bbfc839d3100e71c9f45eb73a6333b3142174b8e24113247cde9cb243",
+    "models/v33/model.py": "440cf9c323c1a0cdaa4fcda1465eafd7eb3c8f04fccdf1cd3665a64748ca57bf",
+    "models/v33/README.md": "44d8e98466a1c48087b39d053968812b19edc550767ab0e3f84591f0707ec8ea",
+    "README.md": "effc9aad5a3fc1e84c882fa3d965a573186d88052f1a5f15428f0a42ac7a943a",
+    "release_staging/v12_beta11_candidate/model.py": "cffdb3230d1bce6a259207093003778255848338dfd6fdbb1fb9363616495371",
+    "release_staging/v12_beta11_candidate/README.md": "6469526bbfc839d3100e71c9f45eb73a6333b3142174b8e24113247cde9cb243",
+    "release_staging/v12_beta11_candidate/v12_beta11_candidate.zip": "de12d731b6f1c4b9f6c83226998e17fc930ad55e8c16948c753c6ceaa754fe02",
+    "release_staging/v33_conservative_transfer_candidate/model.py": "440cf9c323c1a0cdaa4fcda1465eafd7eb3c8f04fccdf1cd3665a64748ca57bf",
+    "release_staging/v33_conservative_transfer_candidate/README.md": "44d8e98466a1c48087b39d053968812b19edc550767ab0e3f84591f0707ec8ea",
+    "release_staging/v33_conservative_transfer_candidate/v33_conservative_transfer_candidate.zip": "21e8b461ec483f6a13365e001cadb7f94557ad7a325b5343c941495279477b41",
+    "requirements-research.txt": "f262ca4ee450296864393b91fecc54c934972e398fb7d88d2b82dfb6ac01bd89"
+  },
+  "license": "MIT",
+  "license_scope": "Team-owned project code and documentation only; external dependencies, datasets, response data, and third-party materials remain under their own terms and are not included.",
+  "license_file": "LICENSE"
+}

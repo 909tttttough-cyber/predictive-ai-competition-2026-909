@@ -1,0 +1,589 @@
+{
+  "status": "real_public_training_channel_offline_experiment",
+  "data": {
+    "repo": "https://huggingface.co/datasets/aims-foundations/measurement-db",
+    "revision": "54074453da7b9911be0f48e4c560be547bc84d21",
+    "collection": "algotune",
+    "benchmark_id": "algotune",
+    "release": "public",
+    "license": "MIT per pinned metadata",
+    "response_type": "binary",
+    "pool_caveat": "Based on current official public training release channel; item-level PAIEC pool assignment not separately confirmed.",
+    "table_rows": {
+      "items": 154,
+      "responses": 2772,
+      "subjects": 18
+    },
+    "unique_items": 154,
+    "distinct_content_clusters": 154,
+    "acquisition_items": 77,
+    "evaluation_items": 77,
+    "response_rows_used_for_training_prior": 924,
+    "training_prior_empirical_rate": 0.6958874458874459,
+    "heldout_evaluation_outcome_rate": 0.7337662337662337,
+    "heldout_evaluation_response_rows": 462,
+    "source_row_counts_per_pair": {
+      "min": 154,
+      "max": 154
+    },
+    "downloaded_file_sha256": [
+      {
+        "path": "raw\\algotune\\metadata.yaml",
+        "bytes": 5182,
+        "sha256": "25f2d0e983ce96b44c604b08b396e72b2677655928788d64dd256b85049ec755"
+      },
+      {
+        "path": "raw\\algotune\\characterization.yaml",
+        "bytes": 4624,
+        "sha256": "22eb7e55d79af1fa719a308f47554b6df715efccfcf9aea0c077aca112e615e5"
+      },
+      {
+        "path": "raw\\algotune\\curation_record.md",
+        "bytes": 984,
+        "sha256": "86a424eb34089e5c92af8b5eda179b807f03aa1fe079286476d238b24d1e81e1"
+      },
+      {
+        "path": "raw\\algotune\\formatted_tables\\benchmarks.parquet",
+        "bytes": 17522,
+        "sha256": "b037f4938d32844f5df1c3f86cca701e167da568d3605e8e3c4e3c9e2ff0a83b"
+      },
+      {
+        "path": "raw\\algotune\\formatted_tables\\items.parquet",
+        "bytes": 508732,
+        "sha256": "b089d8f29fef971f02f45885ecb0a23cb9e9e1dcf249099e1b619f3799611a4c"
+      },
+      {
+        "path": "raw\\algotune\\formatted_tables\\responses.parquet",
+        "bytes": 60286,
+        "sha256": "66454f671fb545f99d012d212dcd82156c2943fced9c5be82318fc674142097f"
+      },
+      {
+        "path": "raw\\algotune\\formatted_tables\\subjects.parquet",
+        "bytes": 7988,
+        "sha256": "7e8fd95d157c3d49d0ab4956a570a4d6a234c8ec7f49104af472a22d08286cf4"
+      }
+    ]
+  },
+  "protocol": {
+    "split_seed": 20261015,
+    "item_split": "global deterministic exact-normalized-content cluster split, outcome-blind, near 50/50",
+    "train_subject_count": 12,
+    "heldout_subject_count": 6,
+    "train_subject_ids": [
+      "6ace0148408b8fd9",
+      "629fbf2f588294c2",
+      "ac12e3d5487f85d5",
+      "3526231d28eef536",
+      "cd3fe622426be379",
+      "0d9953730dc48753",
+      "3f8e98faf76952d0",
+      "768b2ea2b2ea74ea",
+      "49eb2bd21bc77c78",
+      "806060f84158a9ea",
+      "35c60ba0f4b9a739",
+      "6ae3d9db61815383"
+    ],
+    "heldout_subject_ids": [
+      "7de4969ddeda4d16",
+      "73f95f9968e8139c",
+      "7576cc18d2376e17",
+      "707e9b2b789b9a20",
+      "760c73a562fae846",
+      "676ede36cce18bfa"
+    ],
+    "budget_order": "nested deterministic SHA-256 order over acquisition items",
+    "budgets": [
+      0,
+      1,
+      3,
+      7,
+      15,
+      31
+    ],
+    "weights": [
+      0.1,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.1
+    ],
+    "response_unit": "all evaluation response rows retained; one row per task/model according metadata"
+  },
+  "candidate_fit": {
+    "alpha": 13.379471423177664,
+    "beta": 5.8514778012797475,
+    "mean": 0.695726002238205,
+    "concentration": 19.23094922445741,
+    "train_groups": 12,
+    "train_counts": [
+      {
+        "k": 60,
+        "n": 77
+      },
+      {
+        "k": 47,
+        "n": 77
+      },
+      {
+        "k": 66,
+        "n": 77
+      },
+      {
+        "k": 59,
+        "n": 77
+      },
+      {
+        "k": 59,
+        "n": 77
+      },
+      {
+        "k": 63,
+        "n": 77
+      },
+      {
+        "k": 43,
+        "n": 77
+      },
+      {
+        "k": 56,
+        "n": 77
+      },
+      {
+        "k": 62,
+        "n": 77
+      },
+      {
+        "k": 38,
+        "n": 77
+      },
+      {
+        "k": 44,
+        "n": 77
+      },
+      {
+        "k": 46,
+        "n": 77
+      }
+    ],
+    "fit": "bounded_beta_binomial_marginal_MLE_Nelder_Mead",
+    "bounds_each": [
+      0.05,
+      100.0
+    ],
+    "initial_alpha_beta": [
+      1.0,
+      1.0
+    ],
+    "negative_log_likelihood": 42.87110870740657,
+    "iterations": 71,
+    "converged": true
+  },
+  "heldout": {
+    "pair_count": 6,
+    "v12_pair_macro_brier_alc": 0.20277122742241058,
+    "candidate_pair_macro_brier_alc": 0.19408824691358473,
+    "delta_candidate_minus_v12": -0.00868298050882585,
+    "paired_group_bootstrap_95pct_descriptive_ci": [
+      -0.012858007645679015,
+      -0.004147040468427963
+    ],
+    "bootstrap_replicates": 10000,
+    "per_budget_pair_macro": {
+      "0": {
+        "v12_brier": 0.25,
+        "candidate_brier": 0.19680040716545658,
+        "delta_candidate_minus_v12": -0.053199592834543424
+      },
+      "1": {
+        "v12_brier": 0.19985569985569984,
+        "candidate_brier": 0.19588235741549306,
+        "delta_candidate_minus_v12": -0.003973342440206806
+      },
+      "3": {
+        "v12_brier": 0.2008658008658009,
+        "candidate_brier": 0.1949725655795119,
+        "delta_candidate_minus_v12": -0.005893235286289013
+      },
+      "7": {
+        "v12_brier": 0.19838597616375395,
+        "candidate_brier": 0.1939942186268956,
+        "delta_candidate_minus_v12": -0.00439175753685835
+      },
+      "15": {
+        "v12_brier": 0.19563654338740843,
+        "candidate_brier": 0.1928545366220067,
+        "delta_candidate_minus_v12": -0.0027820067654017733
+      },
+      "31": {
+        "v12_brier": 0.18822423367877913,
+        "candidate_brier": 0.18867470548257612,
+        "delta_candidate_minus_v12": 0.0004504718037969836
+      }
+    },
+    "per_group": [
+      {
+        "subject_id": "7de4969ddeda4d16",
+        "benchmark_id": "algotune",
+        "acquisition_unique_items": 77,
+        "evaluation_response_rows": 77,
+        "v12_brier_alc": 0.23867874261824143,
+        "candidate_brier_alc": 0.2368076201136071,
+        "delta_candidate_minus_v12": -0.0018711225046343372,
+        "by_budget": {
+          "0": {
+            "v12_brier": 0.25,
+            "candidate_brier": 0.23492884915991213,
+            "delta_candidate_minus_v12": -0.015071150840087866,
+            "n_revealed": 0,
+            "k_correct": 0,
+            "evaluation_response_count": 77
+          },
+          "1": {
+            "v12_brier": 0.23232323232323232,
+            "candidate_brier": 0.23694067456066495,
+            "delta_candidate_minus_v12": 0.0046174422374326285,
+            "n_revealed": 1,
+            "k_correct": 1,
+            "evaluation_response_count": 77
+          },
+          "3": {
+            "v12_brier": 0.23272727272727275,
+            "candidate_brier": 0.23447865158184067,
+            "delta_candidate_minus_v12": 0.0017513788545679143,
+            "n_revealed": 3,
+            "k_correct": 2,
+            "evaluation_response_count": 77
+          },
+          "7": {
+            "v12_brier": 0.25140291806958476,
+            "candidate_brier": 0.2418985276149947,
+            "delta_candidate_minus_v12": -0.009504390454590061,
+            "n_revealed": 7,
+            "k_correct": 6,
+            "evaluation_response_count": 77
+          },
+          "15": {
+            "v12_brier": 0.23623781063227434,
+            "candidate_brier": 0.23715695189961908,
+            "delta_candidate_minus_v12": 0.0009191412673447419,
+            "n_revealed": 15,
+            "k_correct": 11,
+            "evaluation_response_count": 77
+          },
+          "31": {
+            "v12_brier": 0.23140495867768593,
+            "candidate_brier": 0.23219774066191995,
+            "delta_candidate_minus_v12": 0.00079278198423402,
+            "n_revealed": 31,
+            "k_correct": 20,
+            "evaluation_response_count": 77
+          }
+        }
+      },
+      {
+        "subject_id": "73f95f9968e8139c",
+        "benchmark_id": "algotune",
+        "acquisition_unique_items": 77,
+        "evaluation_response_rows": 77,
+        "v12_brier_alc": 0.25165326522765974,
+        "candidate_brier_alc": 0.2507787217866662,
+        "delta_candidate_minus_v12": -0.0008745434409935249,
+        "by_budget": {
+          "0": {
+            "v12_brier": 0.25,
+            "candidate_brier": 0.2501802259576943,
+            "delta_candidate_minus_v12": 0.00018022595769429106,
+            "n_revealed": 0,
+            "k_correct": 0,
+            "evaluation_response_count": 77
+          },
+          "1": {
+            "v12_brier": 0.2453102453102453,
+            "candidate_brier": 0.25336400141873366,
+            "delta_candidate_minus_v12": 0.008053756108488352,
+            "n_revealed": 1,
+            "k_correct": 1,
+            "evaluation_response_count": 77
+          },
+          "3": {
+            "v12_brier": 0.2815584415584416,
+            "candidate_brier": 0.2599407085508474,
+            "delta_candidate_minus_v12": -0.02161773300759423,
+            "n_revealed": 3,
+            "k_correct": 3,
+            "evaluation_response_count": 77
+          },
+          "7": {
+            "v12_brier": 0.2453102453102453,
+            "candidate_brier": 0.25117871904837624,
+            "delta_candidate_minus_v12": 0.00586847373813093,
+            "n_revealed": 7,
+            "k_correct": 5,
+            "evaluation_response_count": 77
+          },
+          "15": {
+            "v12_brier": 0.24059677346874578,
+            "candidate_brier": 0.24369101852707722,
+            "delta_candidate_minus_v12": 0.0030942450583314463,
+            "n_revealed": 15,
+            "k_correct": 9,
+            "evaluation_response_count": 77
+          },
+          "31": {
+            "v12_brier": 0.240981240981241,
+            "candidate_brier": 0.24125809681889884,
+            "delta_candidate_minus_v12": 0.00027685583765785227,
+            "n_revealed": 31,
+            "k_correct": 18,
+            "evaluation_response_count": 77
+          }
+        }
+      },
+      {
+        "subject_id": "7576cc18d2376e17",
+        "benchmark_id": "algotune",
+        "acquisition_unique_items": 77,
+        "evaluation_response_rows": 77,
+        "v12_brier_alc": 0.1905425294552903,
+        "candidate_brier_alc": 0.17698414433257512,
+        "delta_candidate_minus_v12": -0.013558385122715177,
+        "by_budget": {
+          "0": {
+            "v12_brier": 0.25,
+            "candidate_brier": 0.17900713423471065,
+            "delta_candidate_minus_v12": -0.07099286576528935,
+            "n_revealed": 0,
+            "k_correct": 0,
+            "evaluation_response_count": 77
+          },
+          "1": {
+            "v12_brier": 0.1847041847041847,
+            "candidate_brier": 0.17672180941441284,
+            "delta_candidate_minus_v12": -0.00798237528977186,
+            "n_revealed": 1,
+            "k_correct": 1,
+            "evaluation_response_count": 77
+          },
+          "3": {
+            "v12_brier": 0.20415584415584417,
+            "candidate_brier": 0.1796773567370854,
+            "delta_candidate_minus_v12": -0.02447848741875877,
+            "n_revealed": 3,
+            "k_correct": 2,
+            "evaluation_response_count": 77
+          },
+          "7": {
+            "v12_brier": 0.1720378387045054,
+            "candidate_brier": 0.1736694536595567,
+            "delta_candidate_minus_v12": 0.0016316149550512915,
+            "n_revealed": 7,
+            "k_correct": 6,
+            "evaluation_response_count": 77
+          },
+          "15": {
+            "v12_brier": 0.1774142812205096,
+            "candidate_brier": 0.17652679973345375,
+            "delta_candidate_minus_v12": -0.0008874814870558356,
+            "n_revealed": 15,
+            "k_correct": 11,
+            "evaluation_response_count": 77
+          },
+          "31": {
+            "v12_brier": 0.17880099698281515,
+            "candidate_brier": 0.1776434700020229,
+            "delta_candidate_minus_v12": -0.001157526980792245,
+            "n_revealed": 31,
+            "k_correct": 22,
+            "evaluation_response_count": 77
+          }
+        }
+      },
+      {
+        "subject_id": "707e9b2b789b9a20",
+        "benchmark_id": "algotune",
+        "acquisition_unique_items": 77,
+        "evaluation_response_rows": 77,
+        "v12_brier_alc": 0.16963406182437324,
+        "candidate_brier_alc": 0.15539661818034148,
+        "delta_candidate_minus_v12": -0.014237443644031761,
+        "by_budget": {
+          "0": {
+            "v12_brier": 0.25,
+            "candidate_brier": 0.15867196517100104,
+            "delta_candidate_minus_v12": -0.09132803482899896,
+            "n_revealed": 0,
+            "k_correct": 0,
+            "evaluation_response_count": 77
+          },
+          "1": {
+            "v12_brier": 0.1673881673881674,
+            "candidate_brier": 0.15482404027032118,
+            "delta_candidate_minus_v12": -0.012564127117846213,
+            "n_revealed": 1,
+            "k_correct": 1,
+            "evaluation_response_count": 77
+          },
+          "3": {
+            "v12_brier": 0.1412987012987013,
+            "candidate_brier": 0.14923516047652424,
+            "delta_candidate_minus_v12": 0.00793645917782293,
+            "n_revealed": 3,
+            "k_correct": 3,
+            "evaluation_response_count": 77
+          },
+          "7": {
+            "v12_brier": 0.1673881673881674,
+            "candidate_brier": 0.15735483959031552,
+            "delta_candidate_minus_v12": -0.010033327797851876,
+            "n_revealed": 7,
+            "k_correct": 5,
+            "evaluation_response_count": 77
+          },
+          "15": {
+            "v12_brier": 0.17422370017525726,
+            "candidate_brier": 0.16228351838403776,
+            "delta_candidate_minus_v12": -0.0119401817912195,
+            "n_revealed": 15,
+            "k_correct": 10,
+            "evaluation_response_count": 77
+          },
+          "31": {
+            "v12_brier": 0.14574314574314573,
+            "candidate_brier": 0.1478990991900164,
+            "delta_candidate_minus_v12": 0.0021559534468706676,
+            "n_revealed": 31,
+            "k_correct": 24,
+            "evaluation_response_count": 77
+          }
+        }
+      },
+      {
+        "subject_id": "760c73a562fae846",
+        "benchmark_id": "algotune",
+        "acquisition_unique_items": 77,
+        "evaluation_response_rows": 77,
+        "v12_brier_alc": 0.14348890115472898,
+        "candidate_brier_alc": 0.13429173522689336,
+        "delta_candidate_minus_v12": -0.009197165927835621,
+        "by_budget": {
+          "0": {
+            "v12_brier": 0.25,
+            "candidate_brier": 0.14850438063914626,
+            "delta_candidate_minus_v12": -0.10149561936085374,
+            "n_revealed": 0,
+            "k_correct": 0,
+            "evaluation_response_count": 77
+          },
+          "1": {
+            "v12_brier": 0.15873015873015875,
+            "candidate_brier": 0.14387515569827533,
+            "delta_candidate_minus_v12": -0.014855003031883418,
+            "n_revealed": 1,
+            "k_correct": 1,
+            "evaluation_response_count": 77
+          },
+          "3": {
+            "v12_brier": 0.12571428571428572,
+            "candidate_brier": 0.13693454402382166,
+            "delta_candidate_minus_v12": 0.011220258309535935,
+            "n_revealed": 3,
+            "k_correct": 3,
+            "evaluation_response_count": 77
+          },
+          "7": {
+            "v12_brier": 0.12345679012345678,
+            "candidate_brier": 0.1288839380383226,
+            "delta_candidate_minus_v12": 0.005427147914865815,
+            "n_revealed": 7,
+            "k_correct": 7,
+            "evaluation_response_count": 77
+          },
+          "15": {
+            "v12_brier": 0.12308452792881858,
+            "candidate_brier": 0.12573196429942224,
+            "delta_candidate_minus_v12": 0.002647436370603662,
+            "n_revealed": 15,
+            "k_correct": 14,
+            "evaluation_response_count": 77
+          },
+          "31": {
+            "v12_brier": 0.12291748655385018,
+            "candidate_brier": 0.12356176751010371,
+            "delta_candidate_minus_v12": 0.0006442809562535318,
+            "n_revealed": 31,
+            "k_correct": 28,
+            "evaluation_response_count": 77
+          }
+        }
+      },
+      {
+        "subject_id": "676ede36cce18bfa",
+        "benchmark_id": "algotune",
+        "acquisition_unique_items": 77,
+        "evaluation_response_rows": 77,
+        "v12_brier_alc": 0.2226298642541696,
+        "candidate_brier_alc": 0.21027064184142502,
+        "delta_candidate_minus_v12": -0.012359222412744592,
+        "by_budget": {
+          "0": {
+            "v12_brier": 0.25,
+            "candidate_brier": 0.20950988783027508,
+            "delta_candidate_minus_v12": -0.04049011216972492,
+            "n_revealed": 0,
+            "k_correct": 0,
+            "evaluation_response_count": 77
+          },
+          "1": {
+            "v12_brier": 0.21067821067821066,
+            "candidate_brier": 0.20956846313055033,
+            "delta_candidate_minus_v12": -0.001109747547660328,
+            "n_revealed": 1,
+            "k_correct": 1,
+            "evaluation_response_count": 77
+          },
+          "3": {
+            "v12_brier": 0.21974025974025976,
+            "candidate_brier": 0.2095689721069519,
+            "delta_candidate_minus_v12": -0.010171287633307852,
+            "n_revealed": 3,
+            "k_correct": 2,
+            "evaluation_response_count": 77
+          },
+          "7": {
+            "v12_brier": 0.23071989738656407,
+            "candidate_brier": 0.21097983380980787,
+            "delta_candidate_minus_v12": -0.0197400635767562,
+            "n_revealed": 7,
+            "k_correct": 4,
+            "evaluation_response_count": 77
+          },
+          "15": {
+            "v12_brier": 0.22226216689884512,
+            "candidate_brier": 0.21173696688842997,
+            "delta_candidate_minus_v12": -0.010525200010415153,
+            "n_revealed": 15,
+            "k_correct": 9,
+            "evaluation_response_count": 77
+          },
+          "31": {
+            "v12_brier": 0.20949757313393677,
+            "candidate_brier": 0.20948805871249485,
+            "delta_candidate_minus_v12": -9.514421441925158e-06,
+            "n_revealed": 31,
+            "k_correct": 22,
+            "evaluation_response_count": 77
+          }
+        }
+      }
+    ],
+    "interpretation": "negative candidate-minus-V12 favors candidate; bootstrap has only six heldout groups and is descriptive"
+  },
+  "limitations": [
+    "One official benchmark only; this is not benchmark-held-out validation.",
+    "Current data are public-release research data; per-benchmark competition pool assignment is not separately mapped in the repository.",
+    "AlgoTune binary labels encode reported speedup >=1.0 / explicit N/A threshold, not a fresh PAIEC evaluation or necessarily semantic correctness.",
+    "Only six heldout anonymous subjects; the group bootstrap is exploratory.",
+    "Does not establish transfer to PAIEC private benchmarks or Codabench hidden scoring."
+  ]
+}
