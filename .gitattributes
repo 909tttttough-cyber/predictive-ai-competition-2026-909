@@ -1,0 +1,8 @@
+# Preserve the selected submission model exactly on every platform.
+models/v33_lowpeer/model.py -text whitespace=-blank-at-eof
+# Keep the newly maintained release documentation and its manifest stable.
+README.md text eol=lf
+docs/VALIDATION.md text eol=lf
+manifest.json text eol=lf
+models/v33_lowpeer/README.md text eol=lf
+models/v33_lowpeer/test_model.py text eol=lf

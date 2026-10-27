@@ -50,7 +50,7 @@
   "files_sha256": {
     ".gitignore": "d4d656ef0867b08b126ef552b9feaed3b2ae95c7ffe7d893d7cc570cd0b6a9db",
     "docs/ATTRIBUTION_AND_LICENSES.md": "b89b1e69421dd3c81cd64d61fc903cd05791f119922d3dc89c2eaf9614f1bbea",
-    "docs/VALIDATION.md": "286ce7cc85d8808bbe19ba2aed14d3ce20ab0ed13379883239cc86a297ff833b",
+    "docs/VALIDATION.md": "722f4df1c95b56936f9f211f77a8006db469cff7c5bd54c2f436754fb11cf9d1",
     "experiments/solve_assess_validation/pair_eval.py": "8d7715ee6caee1e718f79263676ae39d9e1a0e68f4f3ea7bf48dcc26c16e931a",
     "experiments/v22_binomial_minimax/model_candidate.py": "b3bffd629628986c4769e2f802c35bb85acc6bbf0c5a4eaffa9d7d618d2c51bb",
     "experiments/v27_official_data/protocol_frozen.md": "85ee272527b747553508f4428ab4cb2f12513ca79925adb96b84eb7045c65dec",
@@ -71,16 +71,30 @@
     "models/v12/README.md": "6469526bbfc839d3100e71c9f45eb73a6333b3142174b8e24113247cde9cb243",
     "models/v33/model.py": "440cf9c323c1a0cdaa4fcda1465eafd7eb3c8f04fccdf1cd3665a64748ca57bf",
     "models/v33/README.md": "44d8e98466a1c48087b39d053968812b19edc550767ab0e3f84591f0707ec8ea",
-    "README.md": "effc9aad5a3fc1e84c882fa3d965a573186d88052f1a5f15428f0a42ac7a943a",
+    "README.md": "02683e1424c4df445ff7f5a516b3817b113f84382469ed3ce861d69fbcd8bec6",
     "release_staging/v12_beta11_candidate/model.py": "cffdb3230d1bce6a259207093003778255848338dfd6fdbb1fb9363616495371",
     "release_staging/v12_beta11_candidate/README.md": "6469526bbfc839d3100e71c9f45eb73a6333b3142174b8e24113247cde9cb243",
     "release_staging/v12_beta11_candidate/v12_beta11_candidate.zip": "de12d731b6f1c4b9f6c83226998e17fc930ad55e8c16948c753c6ceaa754fe02",
     "release_staging/v33_conservative_transfer_candidate/model.py": "440cf9c323c1a0cdaa4fcda1465eafd7eb3c8f04fccdf1cd3665a64748ca57bf",
     "release_staging/v33_conservative_transfer_candidate/README.md": "44d8e98466a1c48087b39d053968812b19edc550767ab0e3f84591f0707ec8ea",
     "release_staging/v33_conservative_transfer_candidate/v33_conservative_transfer_candidate.zip": "21e8b461ec483f6a13365e001cadb7f94557ad7a325b5343c941495279477b41",
-    "requirements-research.txt": "f262ca4ee450296864393b91fecc54c934972e398fb7d88d2b82dfb6ac01bd89"
+    "requirements-research.txt": "f262ca4ee450296864393b91fecc54c934972e398fb7d88d2b82dfb6ac01bd89",
+    "models/v33_lowpeer/model.py": "53646d9b3d38ae2330a4fb5943428024b2f9d8bec588806fa56fb16d73c3b7ac",
+    "models/v33_lowpeer/README.md": "07d7a1d3cd88d7facac7be7b0e79aad6659ad201ea4602a53fdfb40b2b0b8896",
+    "models/v33_lowpeer/test_model.py": "58db1ade6d29b8550fdb892e3ed287c44cd966cc2b4f3e981698c894a7c24027",
+    ".gitattributes": "8ad1a6cf856a068e8df8b3e91d04cf1384ffae88a96c4a3b35520999c31b1e0a"
   },
   "license": "MIT",
   "license_scope": "Team-owned project code and documentation only; external dependencies, datasets, response data, and third-party materials remain under their own terms and are not included.",
-  "license_file": "LICENSE"
+  "license_file": "LICENSE",
+  "selected_formative": {
+    "name": "V33 Low-peer",
+    "model_path": "models/v33_lowpeer/model.py",
+    "model_sha256": "53646d9b3d38ae2330a4fb5943428024b2f9d8bec588806fa56fb16d73c3b7ac",
+    "local_reference_zip_sha256": "16ac64c6c361c7948df656e1db5381f193f8628ca652e13b74ca8847f86b22c6",
+    "reference_zip_redistributed": false,
+    "codabench_submission_id": 1002801,
+    "formative_brier_alc": 0.164578,
+    "evidence": "User-provided Codabench page screenshot; uploaded ZIP byte identity is unknown."
+  }
 }
